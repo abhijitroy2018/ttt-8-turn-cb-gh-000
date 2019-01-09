@@ -12,7 +12,10 @@ def turn(board)
   input_int = input.to_i
   index = input_int - 1
   if valid_move?(board, index)
-
+    move(board, index,"X")
+  else
+    turn(board)
+  end
 end
 
 def valid_move?(board, index)
