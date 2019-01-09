@@ -24,6 +24,7 @@ def input_to_index(input)
   input_int = input.to_i
   input_int - 1
 end
+
 def valid_move?(board, index)
   if index.between?(0,8)
     if position_taken?(board, index)
