@@ -18,7 +18,8 @@ def turn(board)
     turn(board)
   end
 end
-
+def input_to_index()
+end
 def valid_move?(board, index)
   if index.between?(0,8)
     if position_taken?(board, index)
