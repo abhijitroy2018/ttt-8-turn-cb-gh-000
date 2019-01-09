@@ -12,3 +12,14 @@ def turn(board)
   input_int = input.to_i
   index = input_int - 1
 end
+
+# def valid_move?(board, index)
+#   if index.between?(0,8)
+
+def position_taken?(board, index)
+  if board[index] == " " || board[index] == "" || board[index] == nil
+    false
+  else
+    true
+  end
+end
