@@ -19,6 +19,7 @@ def turn(board)
     turn(board)
   end
 end
+
 def input_to_index(input)
   input_int = input.to_i
   input_int - 1
